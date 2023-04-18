@@ -11,6 +11,16 @@ Dans ce dossier sera stocké les contenus requis pour le bon chargement des page
 
 Il y sera notamment stocké le menu des pages (dans `/includes/menu/`), et toutes les images/vidéos/gif des autres pages (dans `/includes/media/`)
 
+#### Media
+`background.pm4` sera le background commun à toutes les pages. Donc lors d'une mise à jour majeure, il suffira de juste changer son contenu (mais toujours avec le même nom) et ce changement s'effectuera sur tout les sites. De ce fait, il se peux qu'une vidéo de background soit disponible en techniquement double dans le dépôt, mais out en ayant pas le même nom.
+
+> videos
+
+Les éléments vidéos utiles au site seront stockés dans ce dossier. En général cela contiendra les vidéos de background.
+> images
+
+Les éléments d'images utiles au site seront stockés dans ce dossier.
+
 # Contenu des pages
 La structuration **HTML** d'une page classique du site se déroule ainsi :
 ```html

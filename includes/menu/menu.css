@@ -4,13 +4,20 @@
     padding: 2px;
     border: 1px solid black;
     margin: 0;
+    background-color: gray;
+    opacity: 50%;
 }
 .menu>*{
     border: 1px solid black;
     padding: 1%;
     margin: 1%;
-    background-color: lightgray;
+    background-color: darkgray;
+    opacity: 100%;
 }
 body{
     margin: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
 }
