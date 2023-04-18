@@ -4,15 +4,13 @@
     padding: 2px;
     border: 1px solid black;
     margin: 0;
-    background-color: gray;
-    opacity: 50%;
+    background-color: rgba(150, 150, 150, 0.5)
 }
 .menu>*{
     border: 1px solid black;
     padding: 1%;
     margin: 1%;
     background-color: darkgray;
-    opacity: 100%;
 }
 body{
     margin: 0;

@@ -1,17 +1,19 @@
 # Zratey's website
 Tout mes projets seront exposés et expliqué ici. C'est la première fois que je fais un vrai site web, donc c'est normal que des tests y soient présents.
 
-## Fonctionnement des dossiers
+# Fonctionnement des dossiers
 La page d'acceuil est à la racine du dépôt git nommé `index.html`.
 
 Pour toutes les autres pages, elles seront nommés `index.html` mais stockés dans `etc/[nom de la page]/`. Donc pour y accéder, le `href` doit contenir : `="etc/[nom de la page]/`. Cependant pour accéder à la page d'accceuil, il faudrait mettre `="/"` dans le `href`.
 
-### Dossier "includes"
+## Dossier "includes"
 Dans ce dossier sera stocké les contenus requis pour le bon chargement des pages.
 
 Il y sera notamment stocké le menu des pages (dans `/includes/menu/`), et toutes les images/vidéos/gif des autres pages (dans `/includes/media/`)
 
-#### Media
+Le dossier contiendra en sa racine le fichier `style.css`, qui sera le fichier CSS commun à la majorité des pages du site web.
+
+### Media
 `background.pm4` sera le background commun à toutes les pages. Donc lors d'une mise à jour majeure, il suffira de juste changer son contenu (mais toujours avec le même nom) et ce changement s'effectuera sur tout les sites. De ce fait, il se peux qu'une vidéo de background soit disponible en techniquement double dans le dépôt, mais out en ayant pas le même nom.
 
 > videos

@@ -6,15 +6,25 @@
     bottom: 0;
     z-index: -3; /* Met l'image en arrière plan */
 }
-
-main {
-    color: white;
-    /* La ligne suivante est pour faire un contour noir au texte*/
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    background-color: rgba(0, 0, 0, 75%);
-}
-
 a {
     text-decoration: underline;
     color: blue;
+}
+
+body {
+    color: white;
+    /* La ligne suivante est pour faire un contour noir au texte*/
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+main {
+    display: flex;
+    background-color: rgba(0, 0, 0, 75%);
+}
+.Categorie{
+    border: 2px solid white;
+    margin: 1%;
+    padding: 0.5%;
+}
+.Titre_Categorie{
+    border-bottom: 2px solid white;
 }
