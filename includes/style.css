@@ -10,7 +10,9 @@ a {
     text-decoration: underline;
     color: blue;
 }
-
+*{
+    box-sizing: border-box;
+}
 body {
     color: white;
     /* La ligne suivante est pour faire un contour noir au texte*/
@@ -19,6 +21,9 @@ body {
 main {
     display: flex;
     background-color: rgba(0, 0, 0, 75%);
+    justify-content: space-between;
+    flex-wrap: wrap; /* permet aux éléments de passer à la ligne si besoin */
+    align-items: stretch; /* étire les éléments pour qu'ils aient, askip, la même hauteur */
 }
 .Categorie{
     border: 2px solid white;
@@ -28,3 +33,4 @@ main {
 .Titre_Categorie{
     border-bottom: 2px solid white;
 }
+
