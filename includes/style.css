@@ -24,7 +24,7 @@ body {
 main {
     display: flex;
     background-color: rgba(0, 0, 0, 75%);
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap; /* permet aux éléments de passer à la ligne si besoin */
     align-items: stretch; /* étire les éléments pour qu'ils aient, askip, la même hauteur */
 }
@@ -35,5 +35,16 @@ main {
 }
 .Titre_Categorie{
     border-bottom: 2px solid white;
+    display: flex;
 }
 
+/* Importation des fonts */
+@font-face {
+    font-family: "Minecraft";
+    src: url(Other_ressources/Minecraft.ttf);
+}
+h2{
+    font-family: "Minecraft";
+    color: white;
+    text-shadow: -1px -1px 0 #000, 3px -1px 0 #000, -1px 3px 0 #000, 1px 3px 0 #000;
+}

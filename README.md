@@ -35,7 +35,7 @@ La structuration **HTML** d'une page classique du site se déroule ainsi :
     <title><!--Titre de la page--></title>
     <link ...> <!--Importation du fichier css/js requis pour cette page-->
 </head>
-<body style="margin: 0;"> # Aucun magin pour que le menu s'intègre bien dans la page
+<body style="margin: 0;"> <!--Aucun magin pour que le menu s'intègre bien dans la page-->
     <header>
         <iframe src="/includes/menu/menu.html" frameborder="0" scrolling="no" style="width: 100%;"></iframe> <!--Intégration de la page du menu-->
     </header>
