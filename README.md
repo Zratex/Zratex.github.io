@@ -14,7 +14,7 @@ Il y sera notamment stocké le menu des pages (dans `/includes/menu/`), et toute
 Le dossier contiendra en sa racine le fichier `style.css`, qui sera le fichier CSS commun à la majorité des pages du site web.
 
 ### Media
-`background.pm4` sera le background commun à toutes les pages. Donc lors d'une mise à jour majeure, il suffira de juste changer son contenu (mais toujours avec le même nom) et ce changement s'effectuera sur tout les sites. De ce fait, il se peux qu'une vidéo de background soit disponible en techniquement double dans le dépôt, mais out en ayant pas le même nom.
+`background.gif` sera le background commun à toutes les pages. Donc lors d'une mise à jour majeure, il suffira de juste changer son contenu (mais toujours avec le même nom) et ce changement s'effectuera sur toutes les pages. De ce fait, il se peux qu'un gif de background soit disponible en techniquement double dans le dépôt, mais out en ayant pas le même nom.
 
 > videos
 

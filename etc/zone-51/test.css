@@ -1,12 +1,3 @@
-#background {
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    right: 0;
-    bottom: 0;
-    z-index: -3; /* Met l'image en arrière plan */
-}
-
 main {
     color: white;
     /* La ligne suivante est pour faire un contour noir au texte*/
@@ -17,4 +8,16 @@ main {
 a {
     text-decoration: underline;
     color: blue;
+}
+
+/* Pour mettre le fond d'écran : */
+html {
+    background-image: url('/includes/media/Background.gif');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100%;
+    right: 0;
+    bottom: 0;
 }
