@@ -26,12 +26,16 @@ main {
     background-color: rgba(0, 0, 0, 75%);
     justify-content: space-evenly;
     flex-wrap: wrap; /* permet aux éléments de passer à la ligne si besoin */
-    align-items: stretch; /* étire les éléments pour qu'ils aient, askip, la même hauteur */
 }
 .Categorie{
     border: 2px solid white;
     margin: 1%;
     padding: 0.5%;
+    width: 30%; /* fixe la largeur de la catégorie à 30% de la largeur de la page */
+}
+.Categorie img {
+    width: 100%; /* permet à l'image de remplir la largeur de la catégorie */
+    height: auto; /* permet à l'image de conserver son ratio d'aspect */
 }
 .Titre_Categorie{
     border-bottom: 2px solid white;
@@ -41,7 +45,7 @@ main {
 /* Importation des fonts */
 @font-face {
     font-family: "Minecraft";
-    src: url(Other_ressources/Minecraft.ttf);
+    src: url("/includes/media/font/Minecraft.ttf");
 }
 h2{
     font-family: "Minecraft";
