@@ -17,11 +17,9 @@ main>*>*{ /* Ici je sélectionne les divs contenus dans main, main_image non inc
     justify-content: center;
     align-items: center;
     box-sizing: border-box; /* Inclure les bordures et le padding dans la largeur/hauteur */
-    border: 5px solid black;
-    transition: background-color 0.3s;
+    border: 10px solid black;
 }
 #Main_image{
-    border: 5px solid black;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -30,7 +28,7 @@ main>*>*{ /* Ici je sélectionne les divs contenus dans main, main_image non inc
     border-radius: 50%;
     width: 33%;
     height: 33%;
-    z-index: 1; /* Parce que j'ai envie qu'il soit affiché au dessus de tout les autres éléments*/
+    z-index: 3; /* Parce que j'ai envie qu'il soit affiché au dessus de tout les autres éléments*/
 }
 
 #projects{
@@ -58,6 +56,17 @@ main>*>*{ /* Ici je sélectionne les divs contenus dans main, main_image non inc
     background-color: blue;
     width: 50%;
     height: 40%;
+    overflow: hidden; /* Cache tout ce qui dépasse*/
+}
+#veronica h2{ /* Pour s'assurer que le texte est par dessus la vidéo */
+    z-index: 2;
+}
+#veronica video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200%;
+    z-index: 1;
 }
 
 #parameters{
@@ -79,5 +88,5 @@ main>*>*{ /* Ici je sélectionne les divs contenus dans main, main_image non inc
 }
 
 #projects:hover, #story:hover, #veronica:hover, #parameters:hover, #posts:hover {
-    opacity: 0.7;
+    border-color: white;
 }
