@@ -5,16 +5,9 @@
     <title>Page Not Found</title>
     <script type="text/javascript">
       (function() {
-        var redirect = function() {
-          var l = window.location;
-          var base = l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "");
-          var path = l.pathname.replace(/\/$/, "") + l.search + l.hash;
-          l.replace(base + "/#/" + path);
-        };
-
-        if (window.location.pathname !== '/404.html') {
-          redirect();
-        }
+        var l = window.location;
+        var base = l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") + "/#" + l.pathname;
+        l.replace(base);
       })();
     </script>
   </head>
