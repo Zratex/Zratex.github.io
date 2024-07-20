@@ -22,11 +22,11 @@ function App() {
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Aucune page n'est disponible pour le moment car le site est en pleine refonte avec une implémentation en Vite et React. En attendant amusez vous avec ce compteur. Ce que vous regardez actuellement est le contenu du fichier <code>src/App.tsx</code>
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Si vous ne savez pas ce qu'est Vite ou React, n'hésitez pas à cliquer sur leurs logos pour en apprendre plus.
       </p>
     </>
   )
