@@ -5,7 +5,7 @@ function Modal({
     title = "Titre",
     description = "Description",
     imagelink = {}, /* On s'attend à une liste d'image */
-    tags = {},
+    tags = [],
     redirection_link = "",
     borderColor= "",
     backgroundcolor = "",
