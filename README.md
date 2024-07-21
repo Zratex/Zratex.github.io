@@ -7,3 +7,5 @@ Merci à :
   - Le guide en question : https://github.com/ErickKS/vite-react-router
 - `Nintendo` pour les modèles 3D provenant de Super *Smash Bros. Ultimate*
   - A noter qu'ils n'ont été impliqués en rien dans le projet, ces modèles sont leur propriété intellectuelle
+- `Ziratsu` pour son modèle de popup dit "modal"
+  - Code source : https://github.com/ecole-du-web/react-modal/

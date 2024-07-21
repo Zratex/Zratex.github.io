@@ -16,6 +16,7 @@ function Projects() {
                 backgroundcolor={itemBackgroundColor}
                 bordercolor={itemBorderColor}
                 tags={["HTML", "CSS", "Javascript"]}
+                popup={true}
             ></Card>
             <Card
                 title="Login Sport"
@@ -24,6 +25,7 @@ function Projects() {
                 backgroundcolor={itemBackgroundColor}
                 bordercolor={itemBorderColor}
                 tags={["Figma", "HTML", "CSS"]}
+                popup={true}
             ></Card>
         </div>
     );

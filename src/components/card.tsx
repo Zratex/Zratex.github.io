@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './card.css';
+import Modal from "./modal";
 
 function Card({
     title = "Titre",
@@ -12,6 +13,10 @@ function Card({
     backgroundcolor = "", //Couleur en RGB des effets de fond de la carte
     bordercolor = "", //Couleur en RGB des effets de bord de la carte
 }) {
+    const [modal, setModal] = useState(false);
+    const toggleModal = () => {
+        setModal(!modal);
+    };
     if (backgroundcolor=="") {
         backgroundcolor="255, 255, 255";
     }
@@ -35,35 +40,42 @@ function Card({
     }
 
     const redirection = () => {
-        if (redirection_link && !popup) {
+        if (popup) {
+            toggleModal();
+        } else if (redirection_link && !popup) {
             window.location.href = redirection_link;
         }
     }
 
     /*Faire quelque chose avec les formes :*/
     console.log(shape);
-    /*Faire quelque chose avec les tags :*/
-    console.log(tags);
-    /*Faire quelque chose avec les images :*/
-    console.log(imagelink);
-    /*Faire quelque chose avec la description :*/
-    console.log(description);
 
     return (
-        <div onClick={redirection} className="card__cell"
-        onMouseMove={handleMouseMove}
-        style={{
-            '--mouse-x': `${mouseX}px`,
-            '--mouse-y': `${mouseY}px`,
-            '--card-background-color': backgroundcolor,
-            '--card-border-color': bordercolor,
-            } as React.CSSProperties }>
-            <div className="card__contentEffect">
-                <header>
+        <>
+            <div onClick={redirection} className="card__cell"
+            onMouseMove={handleMouseMove}
+            style={{
+                '--mouse-x': `${mouseX}px`,
+                '--mouse-y': `${mouseY}px`,
+                '--card-background-color': backgroundcolor,
+                '--card-border-color': bordercolor,
+                } as React.CSSProperties }>
+                <div className="card__contentEffect">
                     <h2>{title}</h2>
-                </header>
+                </div>
             </div>
-        </div>
+            {modal && <Modal
+                    title={title}
+                    description={description}
+                    imagelink={[imagelink]}
+                    tags={tags}
+                    redirection_link={redirection_link}
+                    borderColor={bordercolor}
+                    backgroundcolor={backgroundcolor}
+                    modalState={modal}
+                    toggleModal={toggleModal}
+                ></Modal>}
+        </>
     );
 }
 
