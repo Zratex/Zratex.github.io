@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './card.css';
 
 function Card({
     title = "Titre",
