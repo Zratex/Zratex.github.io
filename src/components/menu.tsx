@@ -3,21 +3,26 @@ import './menu.css';
 import { Link } from 'react-router-dom';
 
 const Menu = () => {
-  const [hovered, setHovered] = useState('');
-  const [illustrationImagePath, setIllustrationImagePath] = useState('');
+    const [hovered, setHovered] = useState('');
+    const [illustrationImagePath, setIllustrationImagePath] = useState('');
 
-  const categories = [
+    const categories = [
     { name: 'Projects', description: 'Description des Projects', URL: '/projects', imagePath: '/src/assets/react.svg' },
     { name: 'Véronica', description: 'Description de Véronica', URL: '', imagePath: '' },
     { name: 'Gamemode', description: 'Description de Gamemode', URL: '', imagePath: '' },
     { name: 'Paramètres', description: 'Description des Paramètres', URL: '', imagePath: '' },
     { name: 'Gallery', description: 'Description de la Gallery', URL: '', imagePath: '' },
-  ];
+    ];
+
+    const updateCenterImage = (description="", imagePath="") => {
+        setHovered(description);
+        setIllustrationImagePath(imagePath);
+    };
 
     return (
         <>
             <div id="main_image">
-                <img src={illustrationImagePath || '/public/vite.svg'} alt="Center Illustration" />
+                <img src={illustrationImagePath || '/vite.svg'} alt="Center Illustration" />
             </div>
             <div className="mainMenu">
                 <div className="mainMenu-split">
@@ -31,14 +36,8 @@ const Menu = () => {
                                     id={category.name}
                                     key={category.name}
                                     className="mainMenuItem"
-                                    onMouseEnter={() => {
-                                        setHovered(category.description);
-                                        setIllustrationImagePath(category.imagePath);
-                                    }}
-                                    onMouseLeave={() => {
-                                        setHovered('');
-                                        setIllustrationImagePath('/public/vite.svg');
-                                    }}
+                                    onMouseEnter={() => updateCenterImage(category.description,category.imagePath)}
+                                    onMouseLeave={() => updateCenterImage()}
                                 >
                                     <h2>{category.name}</h2>
                                 </Link>
@@ -61,7 +60,7 @@ const Menu = () => {
                                     }}
                                     onMouseLeave={() => {
                                         setHovered('');
-                                        setIllustrationImagePath('/public/vite.svg');
+                                        setIllustrationImagePath('');
                                     }}
                                 >
                                     <h2>{category.name}</h2>

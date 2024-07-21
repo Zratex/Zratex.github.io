@@ -67,6 +67,11 @@
     z-index: 3; /* Parce que j'ai envie qu'il soit affiché au dessus de tout les autres éléments*/
 }
 
+#main_image > img {
+    height: 100%;
+    width: 100%;
+}
+
 #mainmenuDescription {
     background-color: black;
     color: white;

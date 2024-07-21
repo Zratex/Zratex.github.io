@@ -1,37 +1,37 @@
 .card__cell{
-    --card-background-color: 255, 255, 255; /* Valeur par défaut */
-    --card-border-color: 255, 255, 255; /* Valeur par défaut */
-    background-color: rgba(var(--card-background-color),0.025);
-    border: 1px solid rgba(var(--card-border-color),0.1);
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-    position: relative;
-    --mouse-x: 0;
-    --mouse-y: 0;
-  }
+  --card-background-color: 255, 255, 255; /* Valeur par défaut */
+  --card-border-color: 255, 255, 255; /* Valeur par défaut */
+  background-color: rgba(var(--card-background-color),0.025);
+  border: 1px solid rgba(var(--card-border-color),0.1);
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  --mouse-x: 0;
+  --mouse-y: 0;
+}
   
-  .card__cell::before{
-    background: radial-gradient(
-      800px circle at var(--mouse-x) var(--mouse-y),
-      rgba(var(--card-background-color),0.1),
-      transparent 40%
-    );
-    border: 1px solid rgba(var(--card-border-color),0.2);
-    transition: opacity 500ms;
-    border-radius: inherit;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    content: "";
-    opacity: 0;
-    z-index: 2;
-    left: 0px;
-    top: 0px;
-    
-  }
-  
-  .card__cell:hover::before{
-    opacity: 1;
-  }
+.card__cell::before{
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    rgba(var(--card-background-color),0.1),
+    transparent 40%
+  );
+  border: 1px solid rgba(var(--card-border-color),0.2);
+  transition: opacity 500ms;
+  border-radius: inherit;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  opacity: 0;
+  z-index: 2;
+  left: 0px;
+  top: 0px;
+
+}
+
+.card__cell:hover::before{
+  opacity: 1;
+}
   
