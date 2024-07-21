@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 function Card({
     title = "Titre",
@@ -8,8 +8,16 @@ function Card({
     tags = {}, //Array de tags en string
     popup = false, //Si vrai, affiche une popup, sinon, redirige vers le lien mis avec la Card
     redirection_link = "", //Si chaîne vide (par défaut), la redirection sera désactivée. Si popup est en true, un bouton de redirection sera mis en place dans la popup, sinon, la carte redirige directement vers ce lien
-    color = "", //Couleur en hexa des effets de la carte
+    backgroundcolor = "", //Couleur en RGB des effets de fond de la carte
+    bordercolor = "", //Couleur en RGB des effets de bord de la carte
 }) {
+    if (backgroundcolor=="") {
+        backgroundcolor="255, 255, 255";
+    }
+    if (bordercolor=="") {
+        bordercolor="255, 255, 255";
+    }
+
     const [mouseX, setMouseX] = useState(0);
     const [mouseY, setMouseY] = useState(0);
 
@@ -23,7 +31,12 @@ function Card({
     return (
         <div className="card__cell"
         onMouseMove={handleMouseMove}
-        style={{ '--mouse-x': `${mouseX}px`, '--mouse-y': `${mouseY}px` }}>
+        style={{
+            '--mouse-x': `${mouseX}px`,
+            '--mouse-y': `${mouseY}px`,
+            '--card-background-color': backgroundcolor,
+            '--card-border-color': bordercolor,
+            } as React.CSSProperties }>
             <div className="card__contentEffect">
                 <header>
                     <h2>{title}</h2>

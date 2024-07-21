@@ -42,8 +42,10 @@
 }
 
 .card__cell{
-  background-color: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.1);
+  --card-background-color: 255, 255, 255; /* Valeur par défaut */
+  --card-border-color: 255, 255, 255; /* Valeur par défaut */
+  background-color: rgba(var(--card-background-color),0.025);
+  border: 1px solid rgba(var(--card-border-color),0.1);
   padding: 10px;
   border-radius: 15px;
   cursor: pointer;
@@ -55,10 +57,10 @@
 .card__cell::before{
   background: radial-gradient(
     800px circle at var(--mouse-x) var(--mouse-y),
-    rgba(255,255,255,0.1),
+    rgba(var(--card-background-color),0.1),
     transparent 40%
   );
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(var(--card-border-color),0.2);
   transition: opacity 500ms;
   border-radius: inherit;
   position: absolute;
