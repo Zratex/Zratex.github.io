@@ -1,0 +1,105 @@
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.mainMenu {
+    position: relative;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.mainMenu-split {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainMenuItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Inclure les bordures et le padding dans la largeur/hauteur */
+    border: 0.5rem solid black;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* Cache tout ce qui dépasse*/
+    width: 100%;
+}
+
+.mainMenuItem h2{ /* Pour s'assurer que le texte est par dessus les effets des items */
+    z-index: 2;
+}
+#main_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Inclure les bordures et le padding dans la largeur/hauteur */
+    border: 0.5rem solid black;
+    /*
+    padding: 0;
+    margin: 0;
+    */
+    overflow: hidden; /* Cache tout ce qui dépasse*/
+    /* Là c'est plus comme mainMenuItem : */
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 33vh;
+    height: 33vh;
+    aspect-ratio: 1 / 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Parce que j'ai envie qu'il soit affiché au dessus de tout les autres éléments*/
+}
+
+#mainmenuDescription {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    height: 10%;
+}
+
+#Projects{
+    background-color: red;
+    height: 50%;
+}
+
+#Gamemode{
+    background-color: green;
+    height: 40%;
+}
+
+#Véronica{
+    background-color: blue;
+    height: 40%;
+}
+
+#Paramètres{
+    background-color: pink;
+    height: 20%;
+}
+
+#Gallery{
+    background-color: yellow;
+    height: 40%;
+}
+/*
+#veronica video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200%;
+    z-index: 1;
+}
+*/
