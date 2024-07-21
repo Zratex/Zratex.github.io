@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Card from "./components/card.tsx"
 
 /**
  * ==================
@@ -34,6 +35,7 @@ function App() {
       <p className="read-the-docs">
         Si vous ne savez pas ce qu'est Vite ou React, n'hésitez pas à cliquer sur leurs logos pour en apprendre plus.
       </p>
+      <Card title="Test" className="test" />
     </>
   )
 }
