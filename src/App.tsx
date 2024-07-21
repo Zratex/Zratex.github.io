@@ -35,7 +35,7 @@ function App() {
       <p className="read-the-docs">
         Si vous ne savez pas ce qu'est Vite ou React, n'hésitez pas à cliquer sur leurs logos pour en apprendre plus.
       </p>
-      <Card title="Test" className="test" />
+      <Card title="Test" />
     </>
   )
 }
