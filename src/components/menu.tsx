@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './menu.css';
-import { Link } from 'react-router-dom';
+import gsap from 'gsap';
 
 const Menu = () => {
     const [hovered, setHovered] = useState('');
@@ -19,6 +19,18 @@ const Menu = () => {
         setIllustrationImagePath(imagePath);
     };
 
+    const redirect = (URL: string) => {
+        if (URL) {
+            gsap.to('body', {
+                duration: 0.5,
+                opacity: 0,
+                onComplete: function () {
+                    window.location.href = `/#${URL}`;
+                },
+            });
+        }
+    }
+
     return (
         <>
             <div id="main_image">
@@ -32,7 +44,7 @@ const Menu = () => {
                     {categories.map((category) => {
                         if (category.name === 'Projects' || category.name === 'Gamemode') {
                             return (
-                                <Link to={category.URL}
+                                <div onClick={() => redirect(category.URL)}
                                     id={category.name}
                                     key={category.name}
                                     className="mainMenuItem"
@@ -40,7 +52,7 @@ const Menu = () => {
                                     onMouseLeave={() => updateCenterImage()}
                                 >
                                     <h2>{category.name}</h2>
-                                </Link>
+                                </div>
                             );
                         }
                         return null;
@@ -50,7 +62,7 @@ const Menu = () => {
                     {categories.map((category) => {
                         if (category.name != 'Projects' && category.name != 'Gamemode') {
                             return (
-                                <Link to={category.URL}
+                                <div onClick={() => redirect(category.URL)}
                                     id={category.name}
                                     key={category.name}
                                     className="mainMenuItem"
@@ -64,7 +76,7 @@ const Menu = () => {
                                     }}
                                 >
                                     <h2>{category.name}</h2>
-                                </Link>
+                                </div>
                             );
                         }
                         return null;
