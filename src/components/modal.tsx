@@ -41,9 +41,9 @@ function Modal({
                 }} className="overlay"></div>
                 <div className="modal-content">
                     <div className="modal-real-content">
-                        {imagelink && <Carousel imagesLinks={imagelink}></Carousel>}
+                        {(imagelink.length !=0) && <Carousel imagesLinks={imagelink}></Carousel>}
                         <div className="modal-description">
-                            <h2>{title}</h2>
+                            <h1>{title}</h1>
                             <div className="modal-description-text">
                                 {description.map((desc, index) => {
                                     return (

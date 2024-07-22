@@ -6,11 +6,11 @@ const Menu = () => {
     const [illustrationImagePath, setIllustrationImagePath] = useState('');
 
     const categories = [
-    { name: 'Projects', description: 'Description des Projects', URL: '/projects', imagePath: '/src/assets/react.svg' },
-    { name: 'Véronica', description: 'Description de Véronica', URL: '', imagePath: '' },
-    { name: 'Gamemode', description: 'Description de Gamemode', URL: '', imagePath: '' },
-    { name: 'Paramètres', description: 'Description des Paramètres', URL: '', imagePath: '' },
-    { name: 'Gallery', description: 'Description de la Gallery', URL: '', imagePath: '' },
+    { name: 'Projects', description: 'Portfolio des projets réalisés par Zratey', URL: '/projects', imagePath: '/src/assets/react.svg' },
+    { name: 'Véronica', description: 'Toutes les pages à propos du projet Véronica', URL: '/veronica', imagePath: '' },
+    { name: 'Gamemode', description: '(Description de Gamemode à faire)', URL: '', imagePath: '' },
+    { name: 'Paramètres', description: '(Description des Paramètres à faire)', URL: '', imagePath: '' },
+    { name: 'Gallery', description: 'Gallery diverse et variée', URL: '/gallery', imagePath: '' },
     ];
 
     const updateCenterImage = (description="", imagePath="") => {
@@ -44,7 +44,7 @@ const Menu = () => {
                                     onMouseEnter={() => updateCenterImage(category.description,category.imagePath)}
                                     onMouseLeave={() => updateCenterImage()}
                                 >
-                                    <h2>{category.name}</h2>
+                                    <h1>{category.name}</h1>
                                 </div>
                             );
                         }
@@ -68,7 +68,7 @@ const Menu = () => {
                                         setIllustrationImagePath('');
                                     }}
                                 >
-                                    <h2>{category.name}</h2>
+                                    <h1>{category.name}</h1>
                                 </div>
                             );
                         }

@@ -35,6 +35,48 @@ function Projects() {
         <div className="project-page">
             <div className="project-list">
                 <Card
+                    title="PROJETS"
+                    description={[
+                        "Présentation sous forme d'une liste des projets sur lesquelles j'ai pu travailler. Les tags vous permettent de savoir les outils qui ont été utilisés pour la réalisation de ceux ci",
+                        "Certains projets auront des liens de redirection comme ici. Celui ci redirige vers la page d'accueil."]}
+                    popup={true}
+                    tags={["Cliquez sur l'un des projets pour plus d'informations"]}
+                    redirection_link="/"
+                    backgroundcolor={"100,25,25"}
+                    bordercolor={"200,100,100"}
+                    overallModalState={overallModal}
+                    toggleOverallModal={toggleOverallModal}
+                ></Card>
+                <Card
+                    title="zratex.github.io"
+                    description={["Projet de site web qui a pour but d'être à la fois un portfolio de mes projets informatiques et graphiques, me donner de l'expérience avec un projet web concrès, mais aussi avoir une véritable utilité pour certains utilisateur au travers des pages /veronica et /gamemode",
+                        "Ce projet a été réalisé en React, déployé grâce à Github Pages, et toutes les images sont stockées sur un dépôt Github à part.",
+                        "Les modèles et animations des personnages sont extraits de Super Smash Bros. Ultimate (2018 Nintendo, Sora | Bandai Namco) depuis Blender, pour être importé sur le site grâce à Spline. De ce fait, les modèles et animations des personnages ne sont pas ma propriété intellectuelle.",
+                        "Ce lien vous redirigera vers le dépôt Github de ce site web."
+                    ]}
+                    redirection_link="https://github.com/Zratex/Zratex.github.io"
+                    backgroundcolor={itemBackgroundColor}
+                    bordercolor={itemBorderColor}
+                    tags={["React", "Javascript", "HTML", "CSS", "Github", "Spline", "Blender"]}
+                    popup={true}
+                    overallModalState={overallModal}
+                    toggleOverallModal={toggleOverallModal}
+                ></Card>
+                <Card
+                    title="Véronica"
+                    description={["Bot en Discord.py encore en Alpha, adapté pour le serveur Discord BDN avec Sqlite comme BD, actuellement en refonte complète prévoyant une API sous API Platform avec PostgreSQL comme BD. C'est le plus gros projet que j'ai envisagé de ma carrière.",
+                        "L'idée de l'API au delà de l'entrainement est de fournir dans le futur la capacité de traiter les données pour en faire des pages utiles mais aussi de statistiques, d'où le pourquoi il existe une page dédiée (le bouton de redirection redirige vers cette page).",
+                        "L'API sera publique, ce qu'il fait que n'importe qui peut l'utiliser pour ses besoins."
+                    ]}
+                    redirection_link="/veronica"
+                    backgroundcolor={itemBackgroundColor}
+                    bordercolor={itemBorderColor}
+                    tags={["Python", "SQLite", "PostgreSQL", "API Platform", "Symfony", "PHP"]}
+                    popup={true}
+                    overallModalState={overallModal}
+                    toggleOverallModal={toggleOverallModal}
+                ></Card>
+                <Card
                     title="Rock Paper Scissors"
                     description={[
                         "Ma première utilisation sérieuse de Javascript. Projet fait lors de nos premiers cours de HTML, CSS et Js pendant le BUT Informatique. Il ne faut pas s'attarder au design du site qui n'est pas très beau, mais surtout aux fonctionnalités logiques derrière. En effet, en plus d'un simple RPS contre une sélection aléatoire, une musique a été implémentée pour s'adapter en fonction de l'état de la partie ('Not a Little Girl (Chun-Li's theme) - Street Fighter VI'). A noter que :",

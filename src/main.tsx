@@ -7,6 +7,7 @@ import Gallery from './pages/Gallery.tsx';
 import Projects from './pages/Projects.tsx';
 import NotFound from './pages/NotFound.tsx';
 import Zone51 from './pages/Zone51.tsx';
+import Veronica from './pages/Veronica.tsx';
 
 const LoginSport = () => {
   React.useEffect(() => {
@@ -29,6 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<App />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/veronica" element={<Veronica />} />
         <Route path="/zone51" element={<Zone51 />} />
         <Route path="/login-sport" element={<LoginSport />} />
         <Route path="/rps" element={<RPS />} />

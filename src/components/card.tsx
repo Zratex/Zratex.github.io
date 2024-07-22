@@ -69,7 +69,7 @@ function Card({
                     <Tags tags={tags}></Tags>
                 </div>
             </div>
-            {overallModalState && modal && <Modal
+            {overallModalState && popup && modal && <Modal
                 title={title}
                 description={description}
                 imagelink={imagelink}
