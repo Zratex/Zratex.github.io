@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import "./carousel.css";
-import { rgbToHex } from "./rgbToHex";
 
 function Carousel({
     imagesLinks = ["https://raw.githubusercontent.com/Zratex/gallery/main/Images/Default/DefaultImage.png",

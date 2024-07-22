@@ -5,7 +5,7 @@ import Tags from "./tags";
 
 function Card({
     title = "Titre",
-    description = "Description",
+    description = ["Description"],
     imagelink = [], //Liste de liens hypertexte vers l'image d'illustration. La chaîne vide mettra une image par défaut
     shape = "default", //"default" par défaut (donc 100% en width et height), "rectangle-w" pour 100% en largeur, et "rectangle-h" pour 100% en hauteur
     tags = [], //Array de tags en string

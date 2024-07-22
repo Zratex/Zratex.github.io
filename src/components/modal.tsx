@@ -5,7 +5,7 @@ import Tags from "./tags";
 
 function Modal({
     title = "Titre",
-    description = "Description",
+    description = ["Description"],
     imagelink = [], /* On s'attend à une liste d'image */
     tags = [],
     redirection_link = "",
@@ -44,7 +44,13 @@ function Modal({
                         {imagelink && <Carousel imagesLinks={imagelink}></Carousel>}
                         <div className="modal-description">
                             <h2>{title}</h2>
-                            <p>{description}</p>
+                            <div className="modal-description-text">
+                                {description.map((desc, index) => {
+                                    return (
+                                        <p key={index}>{desc}</p>
+                                    );
+                                })}
+                            </div>
                             {tags && <Tags tags={tags}></Tags>}
                         </div>
                     </div>
