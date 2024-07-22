@@ -8,8 +8,8 @@ function Tags({
             justifyContent: "center",
             gap: "1rem"
         }}>
-            {tags.map((tag) => (
-                <button className="tag">
+            {tags.map((tag, index) => (
+                <button key={index} className="tag">
                     {tag}
                 </button>
             ))}

@@ -6,7 +6,7 @@ import Tags from "./tags";
 function Card({
     title = "Titre",
     description = "Description",
-    imagelink = "", //Lien hypertexte vers l'image d'illustration. La chaîne vide mettra une image par défaut
+    imagelink = [], //Liste de liens hypertexte vers l'image d'illustration. La chaîne vide mettra une image par défaut
     shape = "default", //"default" par défaut (donc 100% en width et height), "rectangle-w" pour 100% en largeur, et "rectangle-h" pour 100% en hauteur
     tags = [], //Array de tags en string
     popup = false, //Si vrai, affiche une popup, sinon, redirige vers le lien mis avec la Card
@@ -72,7 +72,7 @@ function Card({
             {overallModalState && modal && <Modal
                 title={title}
                 description={description}
-                imagelink={[imagelink]}
+                imagelink={imagelink}
                 tags={tags}
                 redirection_link={redirection_link}
                 borderColor={bordercolor}
