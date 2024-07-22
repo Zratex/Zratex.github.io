@@ -3,7 +3,20 @@ import "./modal.css";
 import Carousel from "./carousel";
 import Tags from "./tags";
 
-function Modal({
+interface ModalProps {
+    title?: string,
+    description?: string[],
+    imagelink?: string[], /* On s'attend à une liste d'image */
+    tags?: string[],
+    redirection_link?: string,
+    borderColor?: string,
+    backgroundcolor?: string,
+    modalState?: boolean,
+    toggleModal: () => void,
+    toggleOverallModal: () => void;
+}
+
+const Modal: React.FC<ModalProps> = ({
     title = "Titre",
     description = ["Description"],
     imagelink = [], /* On s'attend à une liste d'image */
@@ -12,9 +25,9 @@ function Modal({
     borderColor= "",
     backgroundcolor = "",
     modalState = true,
-    toggleModal = undefined, /* Contiendra la fonction qui déclenche l'affichage de la popup*/
-    toggleOverallModal= undefined
-}) {
+    toggleModal, /* Contiendra la fonction qui déclenche l'affichage de la popup*/
+    toggleOverallModal,
+}) => {
 
     const [modal, setModal] = useState(false);
     useEffect(() => {

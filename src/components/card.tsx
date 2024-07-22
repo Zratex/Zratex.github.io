@@ -3,7 +3,21 @@ import './card.css';
 import Modal from "./modal";
 import Tags from "./tags";
 
-function Card({
+interface CardProps {
+    title?: string;
+    description?: string[];
+    imagelink?: string[];
+    shape?: "default" | "rectangle-w" | "rectangle-h";
+    tags?: string[];
+    popup?: boolean;
+    redirection_link?: string;
+    backgroundcolor?: string;
+    bordercolor?: string;
+    overallModalState?: boolean;
+    toggleOverallModal: () => void;
+}
+
+const Card: React.FC<CardProps> = ({
     title = "Titre",
     description = ["Description"],
     imagelink = [], //Liste de liens hypertexte vers l'image d'illustration. La chaîne vide mettra une image par défaut
@@ -14,8 +28,8 @@ function Card({
     backgroundcolor = "", //Couleur en RGB des effets de fond de la carte
     bordercolor = "", //Couleur en RGB des effets de bord de la carte
     overallModalState = false,
-    toggleOverallModal = undefined,
-}) {
+    toggleOverallModal,
+}) => {
     const [modal, setModal] = useState(false);
     const toggleModal = () => {
         setModal(!modal);

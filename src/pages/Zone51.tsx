@@ -1,5 +1,3 @@
-import Carousel from "../components/carousel";
-
 function Zone51() {
     return (
         <>

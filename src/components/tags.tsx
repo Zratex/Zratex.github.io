@@ -1,6 +1,10 @@
-function Tags({
+interface TagsProps {
+    tags?: string[],
+}
+
+const Tags: React.FC<TagsProps> = ({
     tags = [],
-}) {
+}) => {
     return (
         <div className="tags" style={{
             display: "flex",
