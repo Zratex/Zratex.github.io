@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './menu.css';
-import gsap from 'gsap';
 
 const Menu = () => {
     const [hovered, setHovered] = useState('');
@@ -21,13 +20,7 @@ const Menu = () => {
 
     const redirect = (URL: string) => {
         if (URL) {
-            gsap.to('body', {
-                duration: 0.5,
-                opacity: 0,
-                onComplete: function () {
-                    window.location.href = `/#${URL}`;
-                },
-            });
+            window.location.href = `/#${URL}`;
         }
     }
 

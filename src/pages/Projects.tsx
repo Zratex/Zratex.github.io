@@ -5,6 +5,7 @@ import Spline from "@splinetool/react-spline";
 import gsap from "gsap";
 
 function Projects() {
+    const [alreadyLoaded, setAlreadyLoaded] = useState(false);
     const itemBackgroundColor = "255, 0, 0";
     const itemBorderColor = "255, 200, 200";
 
@@ -15,16 +16,19 @@ function Projects() {
 
     const projectSceneRef = useRef(null);
     useEffect(() => {
-
-        gsap.fromTo(
-            projectSceneRef.current,
-            { x: '100%' }, //Position de départ
-            {
-                x: '0%', //Position finale, soit la position qu'il devrait normalement avoir
-                duration: 1,
-                delay: 1 //Commence 1 secondes après le chargement de la page
-            }
-        );
+        if (!alreadyLoaded) { //Si la page n'a pas déjà été chargée pour la première fois
+            gsap.fromTo(
+                projectSceneRef.current,
+                { x: '100%' }, //Position de départ
+                {
+                    x: '0%', //Position finale, soit la position qu'il devrait normalement avoir
+                    duration: 1,
+                    delay: 1 //Commence 1 secondes après le chargement de la page
+                }
+            );
+    
+            setAlreadyLoaded(!alreadyLoaded); //On met que la page a déjà été chargée
+        }
     })
 
     return (
