@@ -77,6 +77,68 @@ function Projects() {
                     toggleOverallModal={toggleOverallModal}
                 ></Card>
                 <Card
+                    title="Zratey"
+                    description={["Au delà de mon pseudo, on peut dire que 'Zratey' est une marque à sa petite échelle : c'est ma chaîne Youtube et Twitch, ainsi que tout ce qui tourne autour de cela. C'est grâce à cette activité que j'ai appris toutes mes connaissances de graphisme/design.",
+                        "C'est honnêtement mon activité favorite à produire mais qui est en pause par manque de temps principalement, avant un 2nd Impact.",
+                        "Le lien vous redirigera vers ma chaîne Youtube principale. Mon pseudo est exactement le même sur Twitch. 'Zratey C2' est ma chaîne Youtube secondaire où j'y fourre un peu tout."
+                    ]}
+                    imagelink={[
+                        "https://raw.githubusercontent.com/Zratex/gallery/main/Images/profile.png"
+                    ]}
+                    redirection_link="https://www.youtube.com/@Zratey"
+                    backgroundcolor={itemBackgroundColor}
+                    bordercolor={itemBorderColor}
+                    tags={["Youtube", "Twitch", "Premiere Pro", "Blender", "OBS"]}
+                    popup={true}
+                    overallModalState={overallModal}
+                    toggleOverallModal={toggleOverallModal}
+                ></Card>
+                <Card
+                    title="Bol de Nouilles"
+                    description={["Serveur Discord communautaire de 'Zratey'. Je le met comme projet à part, car c'est une véritable entité à part avec une communauté très vivante via par exemples des événements, au delà de sa liaison avec la chaîne Youtube/Twitch.",
+                        "Le lien de redirection est le lien d'invitation pour rejoindre ce serveur Discord."
+                    ]}
+                    imagelink={[
+                        "https://raw.githubusercontent.com/Zratex/gallery/main/Images/Bol%20ligue.png"
+                    ]}
+                    redirection_link="https://discord.gg/s6dGnVH "
+                    backgroundcolor={itemBackgroundColor}
+                    bordercolor={itemBorderColor}
+                    tags={["Discord", "Communauté", "Evénementiel"]}
+                    popup={true}
+                    overallModalState={overallModal}
+                    toggleOverallModal={toggleOverallModal}
+                ></Card>
+                <Card
+                    title="Recettes de Bob"
+                    description={["Projet de groupe fait en cours où l'objectif était de réaliser un site de cuisine similaire à Marmiton.",
+                        "D'abbord designé sur Figma, le projet avait était en premier lieu été réalisé avec Symfony pour le back-end et Twig pour le front-end, il a ensuite été développé en Symfony/API Platform pour le back-end, et React pour le front-end.",
+                        "Malheureusement à cause des serveurs de l'IUT en maintenance, aucune démonstrations n'est disponible. Donc voici une image tiré du Figma pour le projet, et le lien redirige vers une vidéo de présentation postée sur ma chaîne secondaire d'une fonctionnalité du site."
+                    ]}
+                    imagelink={[
+                        "https://raw.githubusercontent.com/Zratex/gallery/main/Recettes%20de%20Bob/Figma.PNG"
+                    ]}
+                    redirection_link="https://www.youtube.com/@Zratey"
+                    backgroundcolor={itemBackgroundColor}
+                    bordercolor={itemBorderColor}
+                    tags={["Symfony", "Twig", "API Platform", "React", "Figma"]}
+                    popup={true}
+                    overallModalState={overallModal}
+                    toggleOverallModal={toggleOverallModal}
+                ></Card>
+                <Card
+                    title="binaryTree Cpp"
+                    description={["Projet réalisé dans le cadre des cours où l'on devait programmer une calculatrice en C++ avec comme entrée un simple prompt, mais j'ai décidé de l'implémenter avec un arbre binaire.",
+                    ]}
+                    redirection_link="https://github.com/Zratex/binaryTreeCpp"
+                    backgroundcolor={itemBackgroundColor}
+                    bordercolor={itemBorderColor}
+                    tags={["C++"]}
+                    popup={true}
+                    overallModalState={overallModal}
+                    toggleOverallModal={toggleOverallModal}
+                ></Card>
+                <Card
                     title="Rock Paper Scissors"
                     description={[
                         "Ma première utilisation sérieuse de Javascript. Projet fait lors de nos premiers cours de HTML, CSS et Js pendant le BUT Informatique. Il ne faut pas s'attarder au design du site qui n'est pas très beau, mais surtout aux fonctionnalités logiques derrière. En effet, en plus d'un simple RPS contre une sélection aléatoire, une musique a été implémentée pour s'adapter en fonction de l'état de la partie ('Not a Little Girl (Chun-Li's theme) - Street Fighter VI'). A noter que :",
