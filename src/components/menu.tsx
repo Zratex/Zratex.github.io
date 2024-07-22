@@ -41,12 +41,12 @@ const Menu = () => {
                     <div className="mainMenuItem" id="mainmenuDescription">
                         {hovered && <p>{hovered}</p>}
                     </div>
-                    {categories.map((category) => {
+                    {categories.map((category,index) => {
                         if (category.name === 'Projects' || category.name === 'Gamemode') {
                             return (
                                 <div onClick={() => redirect(category.URL)}
                                     id={category.name}
-                                    key={category.name}
+                                    key={index}
                                     className="mainMenuItem"
                                     onMouseEnter={() => updateCenterImage(category.description,category.imagePath)}
                                     onMouseLeave={() => updateCenterImage()}
@@ -59,12 +59,12 @@ const Menu = () => {
                     })}
                 </div>
                 <div className="mainMenu-split">
-                    {categories.map((category) => {
+                    {categories.map((category,index) => {
                         if (category.name != 'Projects' && category.name != 'Gamemode') {
                             return (
                                 <div onClick={() => redirect(category.URL)}
                                     id={category.name}
-                                    key={category.name}
+                                    key={index}
                                     className="mainMenuItem"
                                     onMouseEnter={() => {
                                         setHovered(category.description);
