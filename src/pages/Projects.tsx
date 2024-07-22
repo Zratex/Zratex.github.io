@@ -20,7 +20,7 @@ function Projects() {
                     "- La musique se lance une fois que la première sélection a été réalisée, c'est dû à une limitation des navigateurs qui empêchent de jouer des sons si ils n'ont pas été délibérément choisis par l'utilisateur",
                     "- Une fois la partie terminée, le bouton 'GAME SET' semble relancer une partie, alors que ça soft lock juste le jeu. Pour refaire une partie, il faut recharger la page"]}
                 imagelink={[
-                    "https://raw.githubusercontent.com/Zratex/gallery/main/Images/RPS.png",
+                    "https://raw.githubusercontent.com/Zratex/gallery/main/rps/RPS.png",
                 ]}
                 redirection_link=""
                 backgroundcolor={itemBackgroundColor}
