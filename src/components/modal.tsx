@@ -11,6 +11,7 @@ function Modal({
     backgroundcolor = "",
     modalState = true,
     toggleModal = undefined, /* Contiendra la fonction qui déclenche l'affichage de la popup*/
+    toggleOverallModal= undefined
 }) {
     const [modal, setModal] = useState(false);
     useEffect(() => {
@@ -31,7 +32,10 @@ function Modal({
                 '--modal-background-color': backgroundcolor,
                 '--modal-border-color': borderColor
             } as React.CSSProperties }>
-                <div onClick={toggleModal} className="overlay"></div>
+                <div onClick={() => {
+                    toggleModal();
+                    toggleOverallModal();
+                }} className="overlay"></div>
                 <div className="modal-content">
                     <h2>{title}</h2>
                     <p>{description}</p>

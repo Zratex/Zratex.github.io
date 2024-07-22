@@ -13,6 +13,8 @@ function Card({
     redirection_link = "", //Si chaîne vide (par défaut), la redirection sera désactivée. Si popup est en true, un bouton de redirection sera mis en place dans la popup, sinon, la carte redirige directement vers ce lien
     backgroundcolor = "", //Couleur en RGB des effets de fond de la carte
     bordercolor = "", //Couleur en RGB des effets de bord de la carte
+    overallModalState = false,
+    toggleOverallModal = undefined,
 }) {
     const [modal, setModal] = useState(false);
     const toggleModal = () => {
@@ -41,8 +43,9 @@ function Card({
     }
 
     const redirection = () => {
-        if (popup) {
+        if (popup && !overallModalState) {
             toggleModal();
+            toggleOverallModal();
         } else if (redirection_link && !popup) {
             window.location.href = redirection_link;
         }
@@ -66,7 +69,7 @@ function Card({
                     <Tags tags={tags}></Tags>
                 </div>
             </div>
-            {modal && <Modal
+            {overallModalState && modal && <Modal
                 title={title}
                 description={description}
                 imagelink={[imagelink]}
@@ -76,6 +79,7 @@ function Card({
                 backgroundcolor={backgroundcolor}
                 modalState={modal}
                 toggleModal={toggleModal}
+                toggleOverallModal={toggleOverallModal}
             ></Modal>}
         </>
     );

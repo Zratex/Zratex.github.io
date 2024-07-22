@@ -1,9 +1,15 @@
+import { useState } from "react";
 import Card from "../components/card";
 import "./projects.css";
 
 function Projects() {
     const itemBackgroundColor = "255, 0, 0";
     const itemBorderColor = "255, 200, 200";
+
+    const [overallModal, setOverallModal] = useState(false);
+    const toggleOverallModal = () => {
+        setOverallModal(!overallModal);
+    }
 
     return (
         <div className="project-list">
@@ -17,6 +23,8 @@ function Projects() {
                 bordercolor={itemBorderColor}
                 tags={["HTML", "CSS", "Javascript"]}
                 popup={true}
+                overallModalState={overallModal}
+                toggleOverallModal={toggleOverallModal}
             ></Card>
             <Card
                 title="Login Sport"
@@ -26,6 +34,8 @@ function Projects() {
                 bordercolor={itemBorderColor}
                 tags={["Figma", "HTML", "CSS"]}
                 popup={true}
+                overallModalState={overallModal}
+                toggleOverallModal={toggleOverallModal}
             ></Card>
         </div>
     );
