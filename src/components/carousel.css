@@ -32,6 +32,8 @@
 .carousel-previous, .carousel-next {
   width: 2.5%;
   height: 5%;
+  min-width: 10px;
+  min-height: 20px;
   cursor: pointer;
   background-position: center;
   background-size: cover;
