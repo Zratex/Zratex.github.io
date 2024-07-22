@@ -24,7 +24,7 @@ body.active-modal {
 .modal-content {
     z-index: 3; /* Pour être affiché au dessus de tout */
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 1.4;

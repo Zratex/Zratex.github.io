@@ -9,3 +9,5 @@ Merci à :
   - A noter qu'ils n'ont été impliqués en rien dans le projet, ces modèles sont leur propriété intellectuelle
 - `Ziratsu` pour son modèle de popup dit "modal"
   - Code source : https://github.com/ecole-du-web/react-modal/
+- `moses-netshitangani` pour le carousel :
+  - Vidéo source : https://youtu.be/tm6c0RQcodY
