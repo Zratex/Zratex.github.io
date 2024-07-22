@@ -52,6 +52,11 @@ function Modal({
                                 })}
                             </div>
                             {tags && <Tags tags={tags}></Tags>}
+                            {redirection_link && <button onClick={() => {window.location.href = redirection_link}} style={{
+                                '--button-border-color': borderColor,
+                                '--button-background-color': backgroundcolor,
+                                '--background-opacity': 0.25
+                            } as React.CSSProperties}>Plus d'informations</button>}
                         </div>
                     </div>
                     <button className="close-modal" onClick={() => {toggleModal(); toggleOverallModal()}} style={{

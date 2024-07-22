@@ -40,9 +40,10 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
+  --background-opacity: 1;
   --button-background-color: 26, 26, 26;
   --button-border-color: 100,108,255;
-  background-color: rgb(var(--button-background-color));
+  background-color: rgba(var(--button-background-color),var(--background-opacity));
   border-color: rgba(var(--button-border-color), 0.25);
   cursor: pointer;
   transition: border-color 0.25s;

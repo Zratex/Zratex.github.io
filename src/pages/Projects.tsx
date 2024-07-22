@@ -40,7 +40,7 @@ function Projects() {
                     "https://raw.githubusercontent.com/Zratex/gallery/main/Login%20Sport/light%20login.png",
                     "https://raw.githubusercontent.com/Zratex/gallery/main/Login%20Sport/dark%20login.png",
                 ]}
-                redirection_link=""
+                redirection_link="/login-sport.html"
                 backgroundcolor={itemBackgroundColor}
                 bordercolor={itemBorderColor}
                 tags={["Figma", "HTML", "CSS"]}
