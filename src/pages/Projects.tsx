@@ -63,6 +63,26 @@ function Projects() {
                     toggleOverallModal={toggleOverallModal}
                 ></Card>
                 <Card
+                    title="[TBG] The Battle Ground"
+                    description={["'The Battle Ground' est une association de jeux de combats qui a pour but de fédérer une véritable communauté à l'échelle de la ville de Reims. Association que j'ai fondée tout début 2024 et dont j'en suis au moment où j'écrit cette page encore président.",
+                        "Notre principale de tournois se nomme 'Underground Arena', qui est une série de tournois inspiré de la direction artistiques des jeux 'Street Fighter' (majoritairement du troisième opus).",
+                        "Pour plus d'informations, veuillez plutôt regarder la page de galleries avec un titre commençant par '[TBG]'. Ce bouton ci dessous vous redirigera vers mes réalisations en tant que graphiste."
+                    ]}
+                    imagelink={["https://raw.githubusercontent.com/Zratex/gallery/main/TBG/test%20design.png",
+                        "https://raw.githubusercontent.com/Zratex/gallery/main/TBG/New%20generation%20logo%20full%20sandbag.png",
+                        "https://raw.githubusercontent.com/Zratex/gallery/main/TBG/UA2nd%20logo.png",
+                        "https://raw.githubusercontent.com/Zratex/gallery/main/TBG/TBG%20presentation.png",
+                        "https://raw.githubusercontent.com/Zratex/gallery/main/TBG/Evolution%20TBG.PNG",
+                    ]}
+                    redirection_link="/#/gallery"
+                    backgroundcolor={itemBackgroundColor}
+                    bordercolor={itemBorderColor}
+                    tags={["Association", "Evénementiel", "Blender", "Paint.net", "Premiere Pro"]}
+                    popup={true}
+                    overallModalState={overallModal}
+                    toggleOverallModal={toggleOverallModal}
+                ></Card>
+                <Card
                     title="Véronica"
                     description={["Bot en Discord.py encore en Alpha, adapté pour le serveur Discord BDN avec Sqlite comme BD, actuellement en refonte complète prévoyant une API sous API Platform avec PostgreSQL comme BD. C'est le plus gros projet que j'ai envisagé de ma carrière.",
                         "L'idée de l'API au delà de l'entrainement est de fournir dans le futur la capacité de traiter les données pour en faire des pages utiles mais aussi de statistiques, d'où le pourquoi il existe une page dédiée (le bouton de redirection redirige vers cette page).",
@@ -118,7 +138,7 @@ function Projects() {
                     imagelink={[
                         "https://raw.githubusercontent.com/Zratex/gallery/main/Recettes%20de%20Bob/Figma.PNG"
                     ]}
-                    redirection_link="https://www.youtube.com/@Zratey"
+                    redirection_link="https://youtu.be/dN0Ub43RdSg"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
                     tags={["Symfony", "Twig", "API Platform", "React", "Figma"]}
