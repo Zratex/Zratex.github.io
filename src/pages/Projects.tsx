@@ -32,7 +32,7 @@ function Projects() {
     })
 
     return (
-        <div className="project-page">
+        <div className="project-page" style={{'--page-background-color': itemBackgroundColor} as React.CSSProperties}>
             <div className="project-list">
                 <Card
                     title="PROJETS"

@@ -42,16 +42,19 @@ const Modal: React.FC<ModalProps> = ({
         }
     }, [modal]);
 
+    const closePopup = () => {
+        toggleModal();
+        toggleOverallModal();
+        document.body.classList.remove('active-modal');
+    };
+
     return (
         <>
             <div className="modal" style={{
                 '--modal-background-color': backgroundcolor,
                 '--modal-border-color': borderColor
             } as React.CSSProperties }>
-                <div onClick={() => {
-                    toggleModal();
-                    toggleOverallModal();
-                }} className="overlay"></div>
+                <div onClick={() => {closePopup()}} className="overlay"></div>
                 <div className="modal-content">
                     <div className="modal-real-content">
                         {(imagelink.length !=0) && <Carousel imagesLinks={imagelink}></Carousel>}
@@ -72,7 +75,7 @@ const Modal: React.FC<ModalProps> = ({
                             } as React.CSSProperties}>Plus d'informations</button>}
                         </div>
                     </div>
-                    <button className="close-modal" onClick={() => {toggleModal(); toggleOverallModal()}} style={{
+                    <button className="close-modal" onClick={() => {closePopup()}} style={{
                             '--button-border-color': backgroundcolor
                         } as React.CSSProperties}>
                             CLOSE
