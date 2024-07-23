@@ -41,7 +41,7 @@ function Projects() {
                         "Certains projets auront des liens de redirection comme ici. Celui ci redirige vers la page d'accueil."]}
                     popup={true}
                     tags={["Cliquez sur l'un des projets pour plus d'informations"]}
-                    redirection_link="/"
+                    redirection_link="/#/"
                     backgroundcolor={"100,25,25"}
                     bordercolor={"200,100,100"}
                     overallModalState={overallModal}
@@ -68,7 +68,7 @@ function Projects() {
                         "L'idée de l'API au delà de l'entrainement est de fournir dans le futur la capacité de traiter les données pour en faire des pages utiles mais aussi de statistiques, d'où le pourquoi il existe une page dédiée (le bouton de redirection redirige vers cette page).",
                         "L'API sera publique, ce qu'il fait que n'importe qui peut l'utiliser pour ses besoins."
                     ]}
-                    redirection_link="/veronica"
+                    redirection_link="/#/veronica"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
                     tags={["Python", "SQLite", "PostgreSQL", "API Platform", "Symfony", "PHP"]}

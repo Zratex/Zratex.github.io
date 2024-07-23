@@ -1,34 +1,51 @@
-import { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const MenuMusicPlayer = () => {
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+    const audioRef = useRef<HTMLAudioElement | null>(null);
+    const [isPlaying, setIsPlaying] = useState<boolean>(false);
+    const [musicSource, setMusicSource] = useState<string>('');
 
-  const handlePlayPause = () => {
+    const musicList = [
+        "https://raw.githubusercontent.com/Zratex/gallery/main/main%20menu%20themes/Menu%201%20-%20Super%20Smash%20Bros.%20Melee.mp3",
+        "https://raw.githubusercontent.com/Zratex/gallery/main/main%20menu%20themes/Menu%202%20-%20Super%20Smash%20Bros.%20Melee.mp3",
+        "https://raw.githubusercontent.com/Zratex/gallery/main/main%20menu%20themes/Menu%201%20-%20Super%20Smash%20Bros.%20Brawl.mp3",
+        "https://raw.githubusercontent.com/Zratex/gallery/main/main%20menu%20themes/Menu%20-%20Super%20Smash%20Bros.%20Wii%20U.mp3",
+        "https://raw.githubusercontent.com/Zratex/gallery/main/main%20menu%20themes/Menu%20-%20Super%20Smash%20Bros.%20Ultimate.mp3"
+    ];
+
+    useEffect(() => {
+        const randomMusic = musicList[Math.floor(Math.random() * musicList.length)];
+        setMusicSource(randomMusic);
+    }, []);
+
+    useEffect(() => {
+        if (musicSource && !audioRef.current) {
+            audioRef.current = new Audio(musicSource);
+            audioRef.current.volume = 0.1;
+            audioRef.current.loop = true;
+        }
+    }, [musicSource]);
+
+    const handlePlayPause = () => {
     if (audioRef.current) {
-        audioRef.current.volume=0.1;
         if (isPlaying) {
-        audioRef.current.pause();
+            audioRef.current.pause();
         } else {
-        audioRef.current.play().catch(error => {
+            audioRef.current.play().catch(error => {
             console.error('Erreur de lecture audio:', error);
         });
         }
         setIsPlaying(!isPlaying);
     }
-  };
+    };
 
-  return (
+    return (
     <div>
-      <audio ref={audioRef} loop>
-        <source src="https://raw.githubusercontent.com/Zratex/gallery/main/main menu themes/Menu 1 - Super Smash Bros. Melee.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <button onClick={handlePlayPause}>
-        {isPlaying ? 'Pause' : 'Play'}
-      </button>
+        <button onClick={handlePlayPause}>
+            {isPlaying ? 'Pause' : 'Play'}
+        </button>
     </div>
-  );
+    );
 };
 
 export default MenuMusicPlayer;
