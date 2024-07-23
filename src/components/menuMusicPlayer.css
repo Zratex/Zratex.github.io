@@ -1,0 +1,16 @@
+.music-player-button {
+    position: fixed;
+    top: 10px;
+    z-index: 5;
+    left: calc(50% - 30px);
+}
+
+.music-player-button button {
+    background: none;
+    cursor: pointer;
+}
+
+.music-player-button img {
+    width: 30px;
+    height: 30px;
+}

@@ -8,6 +8,7 @@ import Projects from './pages/Projects.tsx';
 import NotFound from './pages/NotFound.tsx';
 import Zone51 from './pages/Zone51.tsx';
 import Veronica from './pages/Veronica.tsx';
+import MenuMusicPlayer from './components/menuMusicPlayer.tsx';
 //import MenuMusicPlayer from './components/menuMusicPlayer.tsx';
 
 const LoginSport = () => {
@@ -27,6 +28,7 @@ const RPS = () => {
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <HashRouter>
+      <MenuMusicPlayer />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/projects" element={<Projects />} />

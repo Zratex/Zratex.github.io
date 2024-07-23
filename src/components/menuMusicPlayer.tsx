@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import "./menuMusicPlayer.css";
 
 const MenuMusicPlayer = () => {
     const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -40,9 +41,12 @@ const MenuMusicPlayer = () => {
     };
 
     return (
-    <div>
+    <div className="music-player-button">
         <button onClick={handlePlayPause}>
-            {isPlaying ? 'Pause' : 'Play'}
+            <img src={isPlaying ? 'https://raw.githubusercontent.com/Zratex/gallery/main/Images/MusicPlay.png'
+                : 'https://raw.githubusercontent.com/Zratex/gallery/main/Images/MusicMute.png'}
+            alt={isPlaying ? 'Pause Music' : 'Play Music'}
+            />
         </button>
     </div>
     );
