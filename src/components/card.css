@@ -2,7 +2,7 @@
   --card-background-color: 255, 255, 255; /* Valeur par défaut */
   --card-border-color: 255, 255, 255; /* Valeur par défaut */
   background-color: rgba(var(--card-background-color),0.025);
-  border: 1px solid rgba(var(--card-border-color),0.1);
+  border: 2px solid rgba(var(--card-border-color),0.1);
   padding: 10px;
   border-radius: 15px;
   cursor: pointer;

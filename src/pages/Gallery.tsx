@@ -42,7 +42,6 @@ function Gallery() {
                         "Collections d'images prises ou faites par moi même que je partage, que ce soit du design, du dessins, de la photo ou autre.",
                         "A noter que certains travaux concernant des projets sont plutôt disponible sur la page des projets. Ce lien vous deririgera vers cette page."]}
                     popup={true}
-                    tags={["Cliquez sur l'une des collections pour les révéler"]}
                     redirection_link="/#/projects"
                     backgroundcolor={"100,100,25"}
                     bordercolor={"200,200,100"}

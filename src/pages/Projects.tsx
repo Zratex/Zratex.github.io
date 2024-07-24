@@ -40,7 +40,6 @@ function Projects() {
                         "Présentation sous forme d'une liste des projets sur lesquelles j'ai pu travailler. Les tags vous permettent de savoir les outils qui ont été utilisés pour la réalisation de ceux ci",
                         "Certains projets auront des liens de redirection comme ici. Celui ci redirige vers la page d'accueil."]}
                     popup={true}
-                    tags={["Cliquez sur l'un des projets pour plus d'informations"]}
                     redirection_link="/#/"
                     backgroundcolor={"100,25,25"}
                     bordercolor={"200,100,100"}

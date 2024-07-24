@@ -73,13 +73,13 @@ const Modal: React.FC<ModalProps> = ({
                                 '--button-background-color': backgroundcolor,
                                 '--background-opacity': 0.25
                             } as React.CSSProperties}>Plus d'informations</button>}
+                            <button className="close-modal" onClick={() => {closePopup()}} style={{
+                                '--button-border-color': backgroundcolor
+                            } as React.CSSProperties}>
+                                CLOSE
+                            </button>
                         </div>
                     </div>
-                    <button className="close-modal" onClick={() => {closePopup()}} style={{
-                            '--button-border-color': backgroundcolor
-                        } as React.CSSProperties}>
-                            CLOSE
-                    </button>
                 </div>
             </div>
         </>

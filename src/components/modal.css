@@ -30,12 +30,14 @@ body.active-modal {
     line-height: 1.4;
     --modal-background-color: 25, 25, 25;
     background: rgba(var(--modal-background-color),0.9);
+    color: #F9F9F9;
     padding: 14px 28px;
-    border-radius: 3px;
+    border-radius: 1rem;
     width: 80%;
+    height: 90%;
     display: flex;
+    align-items: center;
     gap: 1rem;
-    flex-direction: column;
     z-index: 4;
 }
 
