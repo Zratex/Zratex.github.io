@@ -10,6 +10,7 @@ interface CardProps {
     shape?: "default" | "rectangle-w" | "rectangle-h";
     tags?: string[];
     popup?: boolean;
+    redirection_link_description?: string,
     redirection_link?: string;
     backgroundcolor?: string;
     bordercolor?: string;
@@ -19,11 +20,12 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({
     title = "Titre",
-    description = ["Description"],
+    description = ["Description par défaut"],
     imagelink = [], //Liste de liens hypertexte vers l'image d'illustration. La chaîne vide mettra une image par défaut
     shape = "default", //"default" par défaut (donc 100% en width et height), "rectangle-w" pour 100% en largeur, et "rectangle-h" pour 100% en hauteur
     tags = [], //Array de tags en string
     popup = false, //Si vrai, affiche une popup, sinon, redirige vers le lien mis avec la Card
+    redirection_link_description = "Plus d'informations", //Description du bouton de redirection
     redirection_link = "", //Si chaîne vide (par défaut), la redirection sera désactivée. Si popup est en true, un bouton de redirection sera mis en place dans la popup, sinon, la carte redirige directement vers ce lien
     backgroundcolor = "", //Couleur en RGB des effets de fond de la carte
     bordercolor = "", //Couleur en RGB des effets de bord de la carte
@@ -88,6 +90,7 @@ const Card: React.FC<CardProps> = ({
                 description={description}
                 imagelink={imagelink}
                 tags={tags}
+                redirection_link_description={redirection_link_description}
                 redirection_link={redirection_link}
                 borderColor={bordercolor}
                 backgroundcolor={backgroundcolor}

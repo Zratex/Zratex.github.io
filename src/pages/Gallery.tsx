@@ -40,9 +40,11 @@ function Gallery() {
                     title="GALLERY"
                     description={[
                         "Collections d'images prises ou faites par moi même que je partage, que ce soit du design, du dessins, de la photo ou autre.",
+                        "La majorité des images disponible sur cette page sont stockées sur le dépôt Github Zratex/gallery",
                         "A noter que certains travaux concernant des projets sont plutôt disponible sur la page des projets. Ce lien vous deririgera vers cette page."]}
                     popup={true}
                     redirection_link="/#/projects"
+                    redirection_link_description="Page des projets"
                     backgroundcolor={"100,100,25"}
                     bordercolor={"200,200,100"}
                     overallModalState={overallModal}
@@ -54,7 +56,12 @@ function Gallery() {
                     ]}
                     imagelink={["https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/Photos/FlowerInChartres.jpg",
                         "https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/Photos/LostAtDamoiselles.jpg",
-                        "https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/Photos/Roy%20and%20Chrom.jpg"
+                        "https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/Photos/Roy%20and%20Chrom.jpg",
+                        "https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/Photos/IMG_20240126_211740.jpg",
+                        "https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/Photos/IMG_20240127_165125.jpg",
+                        "https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/Photos/IMG_20240127_174605.jpg",
+                        "https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/Photos/IMG_20240131_084105.jpg",
+                        "https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/Photos/IMG_20240307_180652.jpg"
                     ]}
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
@@ -151,6 +158,7 @@ function Gallery() {
                         "https://raw.githubusercontent.com/Zratex/gallery/main/TBG/Affiches%20TBG/UAnew/Zelda.png",
                     ]}
                     redirection_link="https://youtu.be/XXY-FQMnk6M"
+                    redirection_link_description="Cinématique de comparaison"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
                     tags={["Blender", "Paint.net", "Premiere Pro"]}
@@ -191,7 +199,8 @@ function Gallery() {
                     imagelink={[ "https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/Smash%20renders/FF7/FF7%20minia.png",
                         "https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/Smash%20renders/FF7/Cloud%20thumbnail.png"
                     ]}
-                    redirection_link="https://discord.gg/KFGpARd"
+                    redirection_link="https://youtu.be/CLMHP-sXzBQ"
+                    redirection_link_description="Vidéo sur FFVII"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
                     tags={["Premiere Pro","Blender", "Paint.net"]}
@@ -211,6 +220,7 @@ function Gallery() {
                         "https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/Smash%20renders/Eurélien/results%20tournament%20EeL%2018.04.2020.png",
                         "https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/Smash%20renders/Eurélien/results%20tournament%20EeL%2030.05.2020.png"
                     ]}
+                    redirection_link_description="Lien d'invitation vers le serveur Discord Smash Eurélien"
                     redirection_link="https://discord.gg/KFGpARd"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
@@ -259,6 +269,7 @@ function Gallery() {
                     imagelink={[
                         "https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/3D%20Render/F-16%26F-18.png"
                     ]}
+                    redirection_link_description="L'animation en question"
                     redirection_link="https://youtu.be/b6XCUKFjTOc"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
@@ -276,6 +287,7 @@ function Gallery() {
                     imagelink={[
                         "https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/3D%20Render/Zratey%20mains%204K.png"
                     ]}
+                    redirection_link_description="Chaîne YT principale"
                     redirection_link="https://www.youtube.com/@Zratey"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
@@ -293,6 +305,7 @@ function Gallery() {
                     imagelink={[
                         "https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/Valorant%20renders/Neon%20slide.png"
                     ]}
+                    redirection_link_description="L'animation en question"
                     redirection_link="https://youtu.be/-RrDvKhfXBc"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
@@ -310,6 +323,7 @@ function Gallery() {
                     imagelink={[
                         "https://raw.githubusercontent.com/Zratex/gallery/main/Gallery%20collection/Valorant%20renders/Omen%20smoke.png"
                     ]}
+                    redirection_link_description="L'animation en question"
                     redirection_link="https://youtu.be/3yFrEbPJ5nM"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}

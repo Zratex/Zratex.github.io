@@ -8,6 +8,7 @@ interface ModalProps {
     description?: string[],
     imagelink?: string[], /* On s'attend à une liste d'image */
     tags?: string[],
+    redirection_link_description?: string,
     redirection_link?: string,
     borderColor?: string,
     backgroundcolor?: string,
@@ -21,6 +22,7 @@ const Modal: React.FC<ModalProps> = ({
     description = ["Description"],
     imagelink = [], /* On s'attend à une liste d'image */
     tags = [],
+    redirection_link_description = "Plus d'informations",
     redirection_link = "",
     borderColor= "",
     backgroundcolor = "",
@@ -72,11 +74,11 @@ const Modal: React.FC<ModalProps> = ({
                                 '--button-border-color': borderColor,
                                 '--button-background-color': backgroundcolor,
                                 '--background-opacity': 0.25
-                            } as React.CSSProperties}>Plus d'informations</button>}
+                            } as React.CSSProperties}>{redirection_link_description}</button>}
                             <button className="close-modal" onClick={() => {closePopup()}} style={{
                                 '--button-border-color': backgroundcolor
                             } as React.CSSProperties}>
-                                CLOSE
+                                FERMER
                             </button>
                         </div>
                     </div>

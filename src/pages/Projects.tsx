@@ -40,6 +40,7 @@ function Projects() {
                         "Présentation sous forme d'une liste des projets sur lesquelles j'ai pu travailler. Les tags vous permettent de savoir les outils qui ont été utilisés pour la réalisation de ceux ci",
                         "Certains projets auront des liens de redirection comme ici. Celui ci redirige vers la page d'accueil."]}
                     popup={true}
+                    redirection_link_description="Page d'accueil"
                     redirection_link="/#/"
                     backgroundcolor={"100,25,25"}
                     bordercolor={"200,100,100"}
@@ -53,6 +54,7 @@ function Projects() {
                         "Les modèles et animations des personnages sont extraits de Super Smash Bros. Ultimate (2018 Nintendo, Sora | Bandai Namco) depuis Blender, pour être importé sur le site grâce à Spline. De ce fait, les modèles et animations des personnages ne sont pas ma propriété intellectuelle.",
                         "Ce lien vous redirigera vers le dépôt Github de ce site web."
                     ]}
+                    redirection_link_description="Dépôt Github de ce site web"
                     redirection_link="https://github.com/Zratex/Zratex.github.io"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
@@ -73,6 +75,7 @@ function Projects() {
                         "https://raw.githubusercontent.com/Zratex/gallery/main/TBG/TBG%20presentation.png",
                         "https://raw.githubusercontent.com/Zratex/gallery/main/TBG/Evolution%20TBG.PNG",
                     ]}
+                    redirection_link_description="Gallery de ce site"
                     redirection_link="/#/gallery"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
@@ -87,6 +90,7 @@ function Projects() {
                         "L'idée de l'API au delà de l'entrainement est de fournir dans le futur la capacité de traiter les données pour en faire des pages utiles mais aussi de statistiques, d'où le pourquoi il existe une page dédiée (le bouton de redirection redirige vers cette page).",
                         "L'API sera publique, ce qu'il fait que n'importe qui peut l'utiliser pour ses besoins."
                     ]}
+                    redirection_link_description="Page sur Véronica"
                     redirection_link="/#/veronica"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
@@ -104,6 +108,7 @@ function Projects() {
                     imagelink={[
                         "https://raw.githubusercontent.com/Zratex/gallery/main/Images/profile.png"
                     ]}
+                    redirection_link_description="Chaîne YT principale"
                     redirection_link="https://www.youtube.com/@Zratey"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
@@ -120,7 +125,8 @@ function Projects() {
                     imagelink={[
                         "https://raw.githubusercontent.com/Zratex/gallery/main/Images/Bol%20ligue.png"
                     ]}
-                    redirection_link="https://discord.gg/s6dGnVH "
+                    redirection_link_description="Lien d'invitation vers le serveur Discord"
+                    redirection_link="https://discord.gg/s6dGnVH"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
                     tags={["Discord", "Communauté", "Evénementiel"]}
@@ -137,6 +143,7 @@ function Projects() {
                     imagelink={[
                         "https://raw.githubusercontent.com/Zratex/gallery/main/Recettes%20de%20Bob/Figma.PNG"
                     ]}
+                    redirection_link_description="Vidéo de présentation"
                     redirection_link="https://youtu.be/dN0Ub43RdSg"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
@@ -149,6 +156,7 @@ function Projects() {
                     title="binaryTree Cpp"
                     description={["Projet réalisé dans le cadre des cours où l'on devait programmer une calculatrice en C++ avec comme entrée un simple prompt, mais j'ai décidé de l'implémenter avec un arbre binaire.",
                     ]}
+                    redirection_link_description="Dépôt Github du projet"
                     redirection_link="https://github.com/Zratex/binaryTreeCpp"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
@@ -166,6 +174,7 @@ function Projects() {
                     imagelink={[
                         "https://raw.githubusercontent.com/Zratex/gallery/main/rps/RPS.png",
                     ]}
+                    redirection_link_description="Démonstration"
                     redirection_link="/rps.html"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
@@ -184,6 +193,7 @@ function Projects() {
                         "https://raw.githubusercontent.com/Zratex/gallery/main/Login%20Sport/light%20login.png",
                         "https://raw.githubusercontent.com/Zratex/gallery/main/Login%20Sport/dark%20login.png",
                     ]}
+                    redirection_link_description="Démonstration"
                     redirection_link="/login-sport.html"
                     backgroundcolor={itemBackgroundColor}
                     bordercolor={itemBorderColor}
