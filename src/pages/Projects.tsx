@@ -66,8 +66,8 @@ function Projects() {
                 <Card
                     title="[TBG] The Battle Ground"
                     description={["'The Battle Ground' est une association de jeux de combats qui a pour but de fédérer une véritable communauté à l'échelle de la ville de Reims. Association que j'ai fondée tout début 2024 et dont j'en suis au moment où j'écrit cette page encore président.",
-                        "Notre principale de tournois se nomme 'Underground Arena', qui est une série de tournois inspiré de la direction artistiques des jeux 'Street Fighter' (majoritairement du troisième opus).",
-                        "Pour plus d'informations, veuillez plutôt regarder la page de galleries avec un titre commençant par '[TBG]'. Ce bouton ci dessous vous redirigera vers mes réalisations en tant que graphiste."
+                        "Notre principale série de tournois se nomme 'Underground Arena', ayant une direction artistique inspirée des jeux 'Street Fighter' (majoritairement du troisième opus).",
+                        "Pour plus d'informations, veuillez plutôt regarder la page de galleries avec un titre commençant par '[TBG]' où vous verrez mes réalisation en tant que graphiste."
                     ]}
                     imagelink={["https://raw.githubusercontent.com/Zratex/gallery/main/TBG/test%20design.png",
                         "https://raw.githubusercontent.com/Zratex/gallery/main/TBG/New%20generation%20logo%20full%20sandbag.png",

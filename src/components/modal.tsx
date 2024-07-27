@@ -61,8 +61,8 @@ const Modal: React.FC<ModalProps> = ({
                     <div className="modal-real-content">
                         {(imagelink.length !=0) && <Carousel imagesLinks={imagelink}></Carousel>}
                         <div className="modal-description">
-                            <h1>{title}</h1>
                             <div className="modal-description-text">
+                                <h2>{title}</h2>
                                 {description.map((desc, index) => {
                                     return (
                                         <p key={index}>{desc}</p>
@@ -74,7 +74,8 @@ const Modal: React.FC<ModalProps> = ({
                                 '--button-border-color': borderColor,
                                 '--button-background-color': backgroundcolor,
                                 '--background-opacity': 0.25
-                            } as React.CSSProperties}>{redirection_link_description}</button>}
+                            } as React.CSSProperties}>{redirection_link_description}</button>
+                            }
                             <button className="close-modal" onClick={() => {closePopup()}} style={{
                                 '--button-border-color': backgroundcolor
                             } as React.CSSProperties}>

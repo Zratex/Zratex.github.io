@@ -119,6 +119,7 @@ function Gallery() {
                     ]}
                     imagelink={[
                         "https://raw.githubusercontent.com/Zratex/gallery/main/TBG/Affiches%20TBG/UA2nd/2nd%20impact%20affiche.png",
+                        "https://pbs.twimg.com/media/GLOAGtcX0AAf23S?format=png",
                         "https://raw.githubusercontent.com/Zratex/gallery/main/TBG/Affiches%20TBG/UA2nd/Bowser%20explosion.png",
                         "https://raw.githubusercontent.com/Zratex/gallery/main/TBG/Affiches%20TBG/UA2nd/Ryu%20pause%20from%20above.png",
                     ]}
@@ -131,7 +132,7 @@ function Gallery() {
                 ></Card>
                 <Card
                     title="[TBG] Underground Arena: New Generation - Affiches/Clip"
-                    description={["En plus d'être président, je suis aussi le graphiste de l'association The Battle Ground. A l'occasion de notre premier tournoi sur le jeu 'Super Smash Bros. Ultimate' (2018 Nintendo, Sora | Bandai Namco), j'ai réalisé un clip vidéo inspiré de la cinématique d'introduction de 'Street Fighter III: New Generation' (1997 Capcom).",
+                    description={["A l'occasion de notre premier tournoi sur le jeu 'Super Smash Bros. Ultimate' (2018 Nintendo, Sora | Bandai Namco), j'ai réalisé un clip vidéo inspiré de la cinématique d'introduction de 'Street Fighter III: New Generation' (1997 Capcom).",
                         "Chacune des frames ont été extraites pour en faire des affiches à part. Dans cette collection d'images que vous pouvez visionner, vous aurez le rendu après quelques retouches, suivi de l'affiche en elle même.",
                         "Dans le lien ci dessous se trouvera une comparaison entre la vidéo que j'ai réalisé, et la cinématique d'origine."
                     ]}
